@@ -1,0 +1,41 @@
+.Posts {
+    list-style: none;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+  }
+  .Post {
+    border: 2px var(--SecondColor) solid;
+    padding: 3px;
+    margin: 5px auto;
+    border-radius: 10px;
+    width: 90%;
+}
+.Post > img{
+    width: 75%;
+}
+.button1{
+    background-color: #8a8a8a ; 
+    color: black;
+    position: relative;
+    top : 50% ; 
+    left: 20rem;
+    width: 20% ;
+    height: 10%; 
+}
+.button2{
+    background-color: #8a8a8a ; 
+    color: black;
+    position: relative;
+    top:50%;
+    left: 25rem;
+    width: 20% ;
+    height: 10%; 
+}
+/* .reactionAndComment{
+    
+} */

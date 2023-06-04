@@ -1,0 +1,33 @@
+.Post {
+    border: 2px var(--SecondColor) solid;
+    padding: 3px;
+    margin: 5px auto;
+    border-radius: 10px;
+    width: 90%;
+    color: aqua;
+    background-color: #2E323C    ;
+}
+.Post > div:first-child{
+    width: 100%;
+    margin: 4px;
+}
+.Post > img{
+    width: 100%;
+}
+.post div:last-child{
+    background-color: red;
+    text-align: right;
+}
+.button1{
+    background-color: rgb(43, 255, 0);
+    position: relative;
+    left : 20% ; 
+}
+.button2{
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    left: 30%;
+}
+/* .reactionAndComment{
+    
+} */
