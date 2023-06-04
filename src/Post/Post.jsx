@@ -43,7 +43,7 @@ export default function Post({ postID, author, body, ImageForPost }) {
             Show More{" "}
           </button>
           <img src={ImageForPost} />
-          <div class="d-flex">
+          <div className="d-flex">
             <button className={classes.button1} onClick={accept}>
               {" "}
               Accepted{" "}
