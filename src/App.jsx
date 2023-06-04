@@ -6,7 +6,7 @@ import Post from "/src/Post/Post";
 import PostsList from "/src/Post/PostsList";
 const App = () => {
   return (
-    <div style={{ backgroundColor: "#F5F5F5" }}>
+    <div>
       <PostsList />
     </div>
   );

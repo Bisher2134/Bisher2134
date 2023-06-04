@@ -1,0 +1,11 @@
+.d-flex {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .d-flex {
+    flex-direction: column;
+  }
+}

@@ -1,4 +1,5 @@
 import classes from "./Post.module.css";
+import postcss from "./post.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function Post({ postID, author, body, ImageForPost }) {
@@ -25,28 +26,35 @@ export default function Post({ postID, author, body, ImageForPost }) {
     }
     setIsVisible(false);
   }
-  function ShowMore()
-  {
-      <div>
+  function ShowMore() {
+    <div>
       <p>{body}</p>
       <img src={ImageForPost} />
-      </div>
+    </div>;
   }
   return (
     <>
-    {isVisible && (
-      <div className={classes.Post}>
-      <p> Author : {author} </p>
-      {
-        <button onClick = {ShowMore()}> Show More </button> 
-      }
-      <p>{body}</p>
-      <img src={ImageForPost} />
-      <button className = {classes.button1} onClick={accept}> Accepted </button>
-      <button className = {classes.button2} onClick={reject}> Rejected </button>
-      </div>
-      )
-    }
+      {isVisible && (
+        <div className={classes.Post}>
+          <p> Author : {author} </p>
+          <p className={classes.pHeight}>{body.substring(0, 150) + "..."}</p>
+          <button className={classes.showMore} onClick={ShowMore()}>
+            {" "}
+            Show More{" "}
+          </button>
+          <img src={ImageForPost} />
+          <div class="d-flex">
+            <button className={classes.button1} onClick={accept}>
+              {" "}
+              Accepted{" "}
+            </button>
+            <button className={classes.button2} onClick={reject}>
+              {" "}
+              Rejected{" "}
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
