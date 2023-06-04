@@ -39,7 +39,7 @@ export default function Post({ postID, author, body, ImageForPost }) {
             className={classes.showMore}
             onClick={() => setShowMore(!showMore)}
           >
-            Show More
+            Show {showMore ? "less" : "More"}
           </button>
           <img src={ImageForPost} />
           <div className="d-flex">
